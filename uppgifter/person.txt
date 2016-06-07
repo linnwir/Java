@@ -1,0 +1,49 @@
+public class testMain {
+
+	public static void main(String[] args) {
+		//import java.util.Scanner;
+
+		
+
+			
+		System.out.println("Helllo world");
+		Person p = new  Person();
+		p.setFirstname("Stefan");
+		p.setLastname("Ferm");
+		System.out.println(p);
+		Person p2 = new Person();
+
+		System.out.println(p2);
+		
+	}
+
+}
+
+
+public class Person {
+
+	private String firstname;
+	private String lastname;
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	@Override
+	public String toString(){
+		
+		return"[Person ] firstname = " + getFirstname() + " lastName = " +getLastname() ;
+	}
+
+}
